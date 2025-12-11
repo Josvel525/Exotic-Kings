@@ -1,65 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Products – Exotic Kings Smoke Shop</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Products – Exotic Kings Smoke Shop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-<header class="container">
-    <h1>Exotic Kings Smoke Shop</h1>
+  <div class="page-shell">
+    <div class="page-inner">
+      <div class="container">
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-        </ul>
-    </nav>
-</header>
+        <!-- HEADER (same as index.html) -->
+        <header class="header">
+          <div class="brand">
+            <div class="brand-title">EXOTIC KINGS</div>
+            <div class="brand-subtitle">Premium Vape &amp; Smoke Shop · Houston, TX</div>
+          </div>
 
-<section class="container">
-    <h2>Our Products</h2>
-    <p>Browse our premium selection of vapes, tobacco, glass, hookahs, and unique accessories.</p>
+          <div class="nav-wrapper">
+            <details class="nav-menu" open>
+              <summary>
+                Menu
+                <span>tap to collapse</span>
+              </summary>
+              <div class="nav-dropdown">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="index.html#story">Our Story</a>
+                <a href="index.html#visit">Visit Us</a>
+              </div>
+            </details>
 
-    <div class="products-grid">
+            <a href="https://www.yelp.com/biz/exotic-kings-smoke-shop-houston"
+               class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" 
+                   viewBox="0 0 24 24" 
+                   fill="currentColor">
+                <path d="M20.2 10.8l-4.7-1.3c-.4-.1-.9 0-1.2.3-.3.3-.5.7-.4 1.1l1.3 4.7c.3 1 .8 1.2 1.4.9l3.1-1.7c.6-.3 1-.7 1.1-1.2.1-.4 0-.9-.3-1.2-.1-.2-.2-.3-.3-.4zM13.9 9.5l3.3-3.6c.5-.6.6-1.1.4-1.6-.2-.5-.6-.9-1.1-1l-3.4-.6c-.9-.2-1.4.1-1.6.8l-.8 4.9c-.2 1 .2 1.5 1 1.6.5.1.9 0 1.2-.3zm-2.4 2.1c-.3-.6-.8-.8-1.4-.6L5.5 12c-1 .3-1.3.8-1.1 1.5l1 3.3c.2.7.6 1.1 1.2 1.2.6.1 1-.1 1.4-.6l3.2-4.4c.4-.6.4-1.1.1-1.6zm.6-2.2c.6-.2.9-.7.8-1.4L11.2 3c-.1-.7-.4-1.2-1-1.4-.5-.2-1.1-.2-1.5.1L6 3.9c-.6.4-.8.9-.6 1.5l1.8 4.4c.3.8.9 1.1 1.7.9l2.2-.8zm8.2 8.5l-2.2-2.8c-.4-.5-.9-.7-1.5-.5l-4.4 1.8c-.8.3-1.1.8-1 1.6l.6 3.4c.1.5.4 1 .9 1.2.5.2 1.1.2 1.6-.3l3.6-3.3c.5-.5.7-1 .4-1.5z"/>
+              </svg>
+            </a>
+          </div>
+        </header>
 
-        <!-- Product Card Template -->
-        <div class="product-card">
-            <img src="https://via.placeholder.com/200x200" alt="Product">
-            <h3>Fume Infinity</h3>
-            <p>4000 Puff Disposable Vape</p>
-            <a href="#" class="btn">View Details</a>
-        </div>
+        <!-- PRODUCTS SECTION -->
+        <main class="section">
+          <div class="section-header">
+            <div>
+              <h1 class="section-title">Products</h1>
+              <p class="section-subtitle">
+                Inventory changes often. This is a general look at what we carry –
+                call or stop by if you’re looking for something specific.
+              </p>
+            </div>
+          </div>
 
-        <div class="product-card">
-            <img src="https://via.placeholder.com/200x200" alt="Product">
-            <h3>RAW Cones (Classic)</h3>
-            <p>King Size – 3 Pack</p>
-            <a href="#" class="btn">View Details</a>
-        </div>
+          <!-- You can group by category like this -->
+          <h2 class="section-title" style="font-size:15px; margin-bottom:8px;">Disposable Vapes</h2>
+          <div class="products-grid" style="margin-bottom:18px;">
+            <div class="product-card">
+              <div class="product-thumb">
+                <img src="https://via.placeholder.com/300x200?text=Fume+Infinity"
+                     alt="Fume Infinity" />
+              </div>
+              <div class="product-name">Fume Infinity</div>
+              <div class="product-meta">Up to 3500–4000 puffs · assorted flavors</div>
+            </div>
 
-        <div class="product-card">
-            <img src="https://via.placeholder.com/200x200" alt="Product">
-            <h3>Hookah – 1 Hose</h3>
-            <p>Assorted Colors</p>
-            <a href="#" class="btn">View Details</a>
-        </div>
+            <div class="product-card">
+              <div class="product-thumb">
+                <img src="https://via.placeholder.com/300x200?text=Elf+Bar"
+                     alt="Elf Bar" />
+              </div>
+              <div class="product-name">Elf Bar / EB Design</div>
+              <div class="product-meta">Popular disposable · multiple flavor options</div>
+            </div>
+          </div>
 
-        <div class="product-card">
-            <img src="https://via.placeholder.com/200x200" alt="Product">
-            <h3>Glass Water Pipe</h3>
-            <p>12″ Premium Glass</p>
-            <a href="#" class="btn">View Details</a>
-        </div>
+          <h2 class="section-title" style="font-size:15px; margin-bottom:8px;">Glass &amp; Water Pipes</h2>
+          <div class="products-grid" style="margin-bottom:18px;">
+            <div class="product-card">
+              <div class="product-thumb">
+                <img src="https://via.placeholder.com/300x200?text=Beaker+Bong"
+                     alt="Beaker bong" />
+              </div>
+              <div class="product-name">Beaker-Style Water Pipes</div>
+              <div class="product-meta">Various heights · clear &amp; colored glass</div>
+            </div>
 
+            <div class="product-card">
+              <div class="product-thumb">
+                <img src="https://via.placeholder.com/300x200?text=Hand+Pipes"
+                     alt="Hand pipes" />
+              </div>
+              <div class="product-name">Hand Pipes &amp; Spoon Pipes</div>
+              <div class="product-meta">Daily-use pieces at different price points</div>
+            </div>
+          </div>
+
+          <h2 class="section-title" style="font-size:15px; margin-bottom:8px;">Hookahs &amp; Charcoal</h2>
+          <div class="products-grid" style="margin-bottom:18px;">
+            <div class="product-card">
+              <div class="product-thumb">
+                <img src="https://via.placeholder.com/300x200?text=Hookah+Setup"
+                     alt="Hookah setup" />
+              </div>
+              <div class="product-name">Single &amp; Multi-Hose Hookahs</div>
+              <div class="product-meta">Assorted colors and styles</div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-thumb">
+                <img src="https://via.placeholder.com/300x200?text=Charcoal"
+                     alt="Hookah charcoal" />
+              </div>
+              <div class="product-name">Hookah Charcoal</div>
+              <div class="product-meta">Quick-light &amp; natural options</div>
+            </div>
+          </div>
+
+          <h2 class="section-title" style="font-size:15px; margin-bottom:8px;">Wraps, Papers &amp; Accessories</h2>
+          <div class="products-grid">
+            <div class="product-card">
+              <div class="product-thumb">
+                <img src="https://via.placeholder.com/300x200?text=RAW+Cones"
+                     alt="RAW cones" />
+              </div>
+              <div class="product-name">RAW Cones &amp; Papers</div>
+              <div class="product-meta">King size, 1 1/4, and more</div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-thumb">
+                <img src="https://via.placeholder.com/300x200?text=Backwoods"
+                     alt="Backwoods" />
+              </div>
+              <div class="product-name">Flavored Wraps</div>
+              <div class="product-meta">Including Backwoods and similar brands</div>
+            </div>
+          </div>
+
+          <div style="margin-top:20px;">
+            <a href="tel:YOUR_SHOP_PHONE" class="btn">
+              Call for today’s inventory
+            </a>
+          </div>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+          <span>
+            © <strong>Exotic Kings Smoke Shop</strong> · Houston, TX
+          </span>
+          <span>
+            Hours, photos &amp; updates are on our Yelp page.
+          </span>
+        </footer>
+
+      </div>
     </div>
-</section>
-
-<footer>
-    <p>© 2025 Exotic Kings Smoke Shop – Houston, TX</p>
-</footer>
+  </div>
 
 </body>
 </html>
