@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promotions | Exotic Kings Smoke Shop</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="text-white">
+
+<!-- NAVBAR -->
+<header id="navbar" class="fixed top-0 w-full z-50 bg-gray-900/80 border-b-2 border-primary shadow-xl">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
+        <a href="index.html" class="text-2xl font-black text-secondary text-neon tracking-wider">Exotic Kings</a>
+
+        <div id="hamburger" class="hamburger lg:hidden cursor-pointer p-2">
+            <div class="hamburger-line line-1 h-1 w-7 bg-white rounded-full my-1"></div>
+            <div class="hamburger-line line-2 h-1 w-7 bg-white rounded-full my-1"></div>
+            <div class="hamburger-line line-3 h-1 w-7 bg-white rounded-full my-1"></div>
+        </div>
+
+        <nav class="hidden lg:block">
+            <ul class="flex space-x-8">
+                <li><a href="index.html" class="text-lg hover:text-primary">Home</a></li>
+                <li><a href="index.html#story" class="text-lg hover:text-primary">Our Story</a></li>
+                <li><a href="products.html" class="text-lg hover:text-primary">Products</a></li>
+                <li><a href="promotions.html" class="text-lg text-secondary">Promotions</a></li>
+                <li><a href="index.html#contact" class="text-lg hover:text-primary">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- MOBILE NAV -->
+<nav id="nav-menu" class="fixed top-0 right-[-280px] w-64 h-full z-40 lg:hidden transition-all duration-300 border-l-2 border-primary bg-gray-900/95">
+    <ul class="pt-20 space-y-2">
+        <li><a href="index.html" class="block py-3 px-6 text-xl text-secondary text-neon">Home</a></li>
+        <li><a href="index.html#story" class="block py-3 px-6 text-xl text-secondary text-neon">Our Story</a></li>
+        <li><a href="products.html" class="block py-3 px-6 text-xl text-secondary text-neon">Products</a></li>
+        <li><a href="promotions.html" class="block py-3 px-6 text-xl text-secondary text-neon">Promotions</a></li>
+        <li><a href="index.html#contact" class="block py-3 px-6 text-xl text-secondary text-neon">Contact Us</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="pt-24 pb-12 bg-gradient-to-b from-gray-950/80 via-background-dark/70 to-gray-900/60">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+        <p class="uppercase tracking-[0.25em] text-primary mb-4">Exclusive Deals</p>
+        <h1 class="text-4xl md:text-5xl font-extrabold text-secondary text-neon mb-4">Today's Promotions</h1>
+        <p class="text-lg text-gray-200">Limited-time savings across your favorite categories. Show these offers in-store to lock in the discount.</p>
+    </div>
+</section>
+
+<!-- PROMOTIONS GRID -->
+<section class="pb-16 max-w-7xl mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Disposable Vapes -->
+        <div class="promo-card bg-gray-800/70 p-6 rounded-2xl border-2 border-primary shadow-2xl flex flex-col md:flex-row gap-6">
+            <div class="md:w-2/5">
+                <img src="20%25 off vapes.png" alt="20% off disposable vapes" class="w-full h-full object-cover rounded-xl shadow-lg">
+            </div>
+            <div class="md:w-3/5 flex flex-col justify-between">
+                <div>
+                    <p class="uppercase text-sm tracking-[0.2em] text-primary mb-2">Disposable Vapes</p>
+                    <h2 class="text-3xl font-bold text-secondary mb-3">20% Off All Disposables</h2>
+                    <p class="text-gray-200 mb-4">Grab your favorite flavors while they last. Mix and match brands with no minimum purchase required.</p>
+                </div>
+                <a href="vape-pens.html" class="inline-flex items-center justify-center px-5 py-3 bg-secondary text-background-dark font-bold rounded-full hover:bg-secondary/80">Shop Vape Pens</a>
+            </div>
+        </div>
+
+        <!-- Glassware -->
+        <div class="promo-card bg-gray-800/70 p-6 rounded-2xl border-2 border-primary shadow-2xl flex flex-col md:flex-row gap-6">
+            <div class="md:w-2/5">
+                <img src="10offglass.png" alt="10% off glassware" class="w-full h-full object-cover rounded-xl shadow-lg">
+            </div>
+            <div class="md:w-3/5 flex flex-col justify-between">
+                <div>
+                    <p class="uppercase text-sm tracking-[0.2em] text-primary mb-2">Glassware</p>
+                    <h2 class="text-3xl font-bold text-secondary mb-3">10% Off All Glass</h2>
+                    <p class="text-gray-200 mb-4">Bongs, rigs, bowls, and accessories are all included. Upgrade your setup with fresh glasswork.</p>
+                </div>
+                <a href="glassware.html" class="inline-flex items-center justify-center px-5 py-3 bg-secondary text-background-dark font-bold rounded-full hover:bg-secondary/80">View Glassware</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- VISIT CTA -->
+<section class="pb-16">
+    <div class="max-w-5xl mx-auto px-4 bg-gray-900/70 border-2 border-primary rounded-2xl shadow-2xl text-center py-10">
+        <h2 class="text-3xl font-extrabold text-secondary text-neon mb-4">Visit Us to Redeem</h2>
+        <p class="text-lg text-gray-200 mb-6">Show this page at checkout to apply your discount. Open 24/7 at 9466 Hammerly Blvd, Houston, TX.</p>
+        <a href="index.html#contact" class="inline-flex items-center justify-center px-6 py-3 bg-primary text-white font-bold rounded-full hover:bg-primary/80">Get Directions</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact" class="bg-gray-900 text-center p-8 border-top-4 border-primary">
+    <p class="text-lg">9466 Hammerly Blvd, Houston, TX 77080<br>Open 24 Hours</p>
+    <p class="text-lg mb-4">Phone: (713) 485-0454</p>
+
+    <p class="text-sm text-gray-400">&copy; <span id="year"></span> Exotic Kings Smoke Shop. All Rights Reserved.</p>
+</footer>
+
+<script>
+// Footer Year
+document.getElementById("year").textContent = new Date().getFullYear();
+
+// Mobile Menu Toggle
+document.getElementById("hamburger").addEventListener("click", () => {
+    document.getElementById("nav-menu").classList.toggle("right-0");
+    document.getElementById("hamburger").classList.toggle("open");
+});
+</script>
+</body>
+</html>
