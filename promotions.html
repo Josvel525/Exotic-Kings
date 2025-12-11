@@ -100,10 +100,23 @@
 
 <!-- FOOTER -->
 <footer id="contact" class="bg-gray-900 text-center p-8 border-top-4 border-primary">
-    <p class="text-lg">9466 Hammerly Blvd, Houston, TX 77080<br>Open 24 Hours</p>
-    <p class="text-lg mb-4">Phone: (713) 485-0454</p>
+    <div class="max-w-4xl mx-auto space-y-4 px-4">
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-2 text-lg leading-relaxed">
+            <a href="https://www.google.com/maps/dir/?api=1&destination=9466+Hammerly+Blvd,+Houston,+TX+77080" class="underline hover:text-primary" target="_blank" rel="noopener">
+                9466 Hammerly Blvd, Houston, TX 77080
+            </a>
+            <span class="hidden sm:inline text-gray-300">•</span>
+            <span class="text-base sm:text-lg">Open 24 Hours · 365 Days</span>
+        </div>
 
-    <p class="text-sm text-gray-400">&copy; <span id="year"></span> Exotic Kings Smoke Shop. All Rights Reserved.</p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-2 text-lg leading-relaxed">
+            <span>Phone: (713) 485-0454</span>
+            <span class="hidden sm:inline text-gray-300">•</span>
+            <a href="mailto:info@exotickingssmokehtx.com" class="underline hover:text-primary break-words sm:break-normal">info@exotickingssmokehtx.com</a>
+        </div>
+
+        <p class="text-sm text-gray-400">&copy; <span id="year"></span> Exotic Kings Smoke Shop. All Rights Reserved.</p>
+    </div>
 </footer>
 
 <script>
