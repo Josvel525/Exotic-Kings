@@ -61,6 +61,15 @@ body {
     opacity: 1;
 }
 
+.hero-copy {
+    display: inline-block;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(32, 10, 26, 0.55));
+    padding: 0.4em 0.9em;
+    border-radius: 0.85rem;
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.35);
+    text-shadow: 0 8px 18px rgba(0, 0, 0, 0.55), 0 0 10px rgba(255, 85, 153, 0.35);
+}
+
 /* ===========================
    PROMO & PRODUCT CARDS
    =========================== */
