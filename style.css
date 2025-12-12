@@ -5,10 +5,22 @@
 :root {
     --primary: #FF5599;      /* Pink */
     --secondary: #FFEE77;    /* Yellow/Gold */
-    --background-dark: #331027; 
+    --background-dark: #331027;
     --gradient-start: #6B244E;
     --gradient-end: #331027;
 }
+
+/* Utility color helpers (to align with Tailwind-style class names used in markup) */
+.bg-primary { background-color: var(--primary) !important; }
+.text-primary { color: var(--primary) !important; }
+.border-primary { border-color: var(--primary) !important; }
+
+.bg-secondary { background-color: var(--secondary) !important; }
+.text-secondary { color: var(--secondary) !important; }
+.border-secondary { border-color: var(--secondary) !important; }
+
+.bg-background-dark { background-color: var(--background-dark) !important; }
+.text-background-dark { color: var(--background-dark) !important; }
 
 /* Global Body Background */
 body {
