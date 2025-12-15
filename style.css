@@ -51,8 +51,8 @@ body {
 }
 
 .nav-logo {
-    height: 48px;
-    width: auto;
+    width: 190px;
+    height: auto;
     display: block;
     filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.35));
 }
