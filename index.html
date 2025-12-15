@@ -17,7 +17,7 @@
 
 <body class="text-white">
 
-<!-- AGE VERIFICATION MODAL -->
+<!-- AGE VERIFICATION MODAL (managed by age-verification.js) -->
 <div id="age-gate" class="fixed inset-0 bg-black/80 backdrop-blur-lg z-50 hidden">
     <div class="max-w-lg mx-auto mt-24 bg-gray-900 border-2 border-primary rounded-2xl shadow-2xl p-8 text-center">
         <p class="text-sm uppercase tracking-[0.35em] text-primary mb-3">Welcome</p>
@@ -215,38 +215,11 @@
     </div>
 </footer>
 
+<script src="age-verification.js"></script>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
     /* Footer Year */
     document.getElementById("year").textContent = new Date().getFullYear();
-
-    /* Age Verification */
-    const ageGate = document.getElementById("age-gate");
-    const confirmButton = document.getElementById("age-confirm");
-    const denyButton = document.getElementById("age-deny");
-
-    const openAgeGate = () => {
-        ageGate.classList.remove("hidden");
-        document.body.classList.add("overflow-hidden");
-    };
-
-    const closeAgeGate = () => {
-        ageGate.classList.add("hidden");
-        document.body.classList.remove("overflow-hidden");
-    };
-
-    if (!localStorage.getItem("ageVerified")) {
-        openAgeGate();
-    }
-
-    confirmButton.addEventListener("click", () => {
-        localStorage.setItem("ageVerified", "true");
-        closeAgeGate();
-    });
-
-    denyButton.addEventListener("click", () => {
-        window.location.href = "https://www.google.com";
-    });
 
     /* Mobile Menu */
     document.getElementById("hamburger").addEventListener("click", () => {

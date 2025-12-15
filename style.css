@@ -19,6 +19,9 @@
 .text-secondary { color: var(--secondary) !important; }
 .border-secondary { border-color: var(--secondary) !important; }
 
+.hidden { display: none !important; }
+.overflow-hidden { overflow: hidden !important; }
+
 .bg-background-dark { background-color: var(--background-dark) !important; }
 .text-background-dark { color: var(--background-dark) !important; }
 
