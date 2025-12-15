@@ -1,0 +1,13 @@
+{
+  "name": "exotic-kings",
+  "version": "1.0.0",
+  "description": "",
+  "main": "age-verification.js",
+  "scripts": {
+    "test": "node age-verification.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
