@@ -1,5 +1,6 @@
 (function () {
   const initAgeGate = () => {
+  document.addEventListener("DOMContentLoaded", () => {
     if (localStorage.getItem("ageVerified")) return;
 
     let ageGate = document.getElementById("age-gate");
@@ -52,4 +53,5 @@
   } else {
     initAgeGate();
   }
+  });
 })();
