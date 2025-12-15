@@ -1,8 +1,5 @@
 (function () {
-  const initAgeGate = () => {
-  document.addEventListener("DOMContentLoaded", () => {
-    if (localStorage.getItem("ageVerified")) return;
-
+  const buildAgeGate = () => {
     let ageGate = document.getElementById("age-gate");
 
     if (!ageGate) {
@@ -20,27 +17,35 @@
           </div>
           <p class="text-xs text-gray-400 mt-4">By entering, you confirm that you are of legal age in your area.</p>
         </div>`;
+
       document.body.prepend(ageGate);
     }
 
+    return ageGate;
+  };
+
+  const openAgeGate = (gate) => {
+    gate.classList.remove("hidden");
+    document.body.classList.add("overflow-hidden");
+  };
+
+  const closeAgeGate = (gate) => {
+    gate.classList.add("hidden");
+    document.body.classList.remove("overflow-hidden");
+  };
+
+  const initAgeGate = () => {
+    if (localStorage.getItem("ageVerified")) return;
+
+    const ageGate = buildAgeGate();
     const confirmButton = document.getElementById("age-confirm");
     const denyButton = document.getElementById("age-deny");
 
-    const openAgeGate = () => {
-      ageGate.classList.remove("hidden");
-      document.body.classList.add("overflow-hidden");
-    };
-
-    const closeAgeGate = () => {
-      ageGate.classList.add("hidden");
-      document.body.classList.remove("overflow-hidden");
-    };
-
-    openAgeGate();
+    openAgeGate(ageGate);
 
     confirmButton?.addEventListener("click", () => {
       localStorage.setItem("ageVerified", "true");
-      closeAgeGate();
+      closeAgeGate(ageGate);
     });
 
     denyButton?.addEventListener("click", () => {
@@ -49,9 +54,8 @@
   };
 
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", initAgeGate);
+    document.addEventListener("DOMContentLoaded", initAgeGate, { once: true });
   } else {
     initAgeGate();
   }
-  });
 })();
