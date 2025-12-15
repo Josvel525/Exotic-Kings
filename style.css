@@ -53,11 +53,19 @@ body {
     backdrop-filter: blur(8px);
 }
 
+#navbar .max-w-7xl {
+    height: auto !important;
+    min-height: 5rem;
+    padding-top: 0.65rem;
+    padding-bottom: 0.65rem;
+}
+
 .nav-logo {
     width: 230px;
     height: auto;
     display: block;
     filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.35));
+    transform: translateY(8px);
 }
 
 .hamburger-line {
