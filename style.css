@@ -82,6 +82,14 @@ body {
     backdrop-filter: blur(8px);
 }
 
+/* Position the mobile menu below the fixed header so links remain fully visible */
+@media (max-width: 1024px) {
+    #nav-menu {
+        top: 4.5rem;
+        height: calc(100vh - 4.5rem);
+    }
+}
+
 /* ===========================
    HERO SLIDESHOW
    =========================== */
