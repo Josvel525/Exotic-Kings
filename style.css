@@ -50,6 +50,13 @@ body {
     backdrop-filter: blur(8px);
 }
 
+.nav-logo {
+    height: 48px;
+    width: auto;
+    display: block;
+    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.35));
+}
+
 .hamburger-line {
     transition: transform 0.3s, opacity 0.3s;
 }
