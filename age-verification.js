@@ -1,4 +1,5 @@
 (function () {
+  const initAgeGate = () => {
   document.addEventListener("DOMContentLoaded", () => {
     if (localStorage.getItem("ageVerified")) return;
 
@@ -45,5 +46,12 @@
     denyButton?.addEventListener("click", () => {
       window.location.href = "https://www.google.com";
     });
+  };
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initAgeGate);
+  } else {
+    initAgeGate();
+  }
   });
 })();
