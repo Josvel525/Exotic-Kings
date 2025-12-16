@@ -62,7 +62,7 @@ body {
 
 .nav-logo {
     width: 230px;
-    height: auto;
+    height: 190px;
     display: block;
     filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.35));
     transform: translateY(8px);
